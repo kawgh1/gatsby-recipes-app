@@ -2,6 +2,8 @@ import React from "react"
 import { Link } from "gatsby"
 // layout
 import Layout from "../components/Layout"
+// CSS module example, not used
+// import { page, text } from "../examples/home.module.css"
 
 export default function Home() {
   return (
