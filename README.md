@@ -1,5 +1,7 @@
 # Gastby Recipes App
 
+- Based off course https://www.udemy.com/course/gatsby-tutorial-and-projects-course/
+
 - First make sure Gatsby-CLI is installed
   - **npm install -g gatsby-cli**
 - Then build new project
