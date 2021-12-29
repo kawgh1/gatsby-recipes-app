@@ -1,4 +1,4 @@
-# Gastby Hello World Tutorial
+# Gastby Recipes App
 
 - First make sure Gatsby-CLI is installed
   - **npm install -g gatsby-cli**
