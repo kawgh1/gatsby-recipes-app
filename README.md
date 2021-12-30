@@ -137,61 +137,62 @@
   - https://www.gatsbyjs.com/plugins/gatsby-source-filesystem
   - ## The point of this plugin is it allows you to access files you specify within your GraphQL queries
 
-    - query MyQuery {
-      allFile {
-      totalCount
-      nodes {
-      relativePath
-      }
-      }
-      }
+          query MyQuery {
+            allFile {
+              totalCount
+              nodes {
+                relativePath
+              }
+            }
+          }
 
-          - This returns all the files specified in gatsby-config.js and their relative path
-          - {
+    - This returns all the files specified in gatsby-config.js and their relative path
 
-      "data": {
-      "allFile": {
-      "totalCount": 16,
-      "nodes": [
       {
-      "relativePath": "404.js"
-      },
-      {
-      "relativePath": "about.js"
-      },
-      {
-      "relativePath": "contact.js"
-      },
-      {
-      "relativePath": "recipes.js"
-      },
-      {
-      "relativePath": "index.js"
-      },
-      {
-      "relativePath": "tags.js"
-      },
-      {
-      "relativePath": "logo.svg"
-      },
-      {
-      "relativePath": "about.jpeg"
-      },
-      {
-      "relativePath": "main.jpeg"
-      },
-      {
-      "relativePath": "recipe-1.jpeg"
-      },
-      {
-      "relativePath": "big copy.jpg"
-      },
-      {
-      "relativePath": "big.jpg"
-      }
-      ]
-      }
-      },
+
+          "data": {
+              "allFile": {
+                  "totalCount": 16,
+                  "nodes": [
+                      {
+                      "relativePath": "404.js"
+                      },
+                      {
+                      "relativePath": "about.js"
+                      },
+                      {
+                      "relativePath": "contact.js"
+                      },
+                      {
+                      "relativePath": "recipes.js"
+                      },
+                      {
+                      "relativePath": "index.js"
+                      },
+                      {
+                      "relativePath": "tags.js"
+                      },
+                      {
+                      "relativePath": "logo.svg"
+                      },
+                      {
+                      "relativePath": "about.jpeg"
+                      },
+                      {
+                      "relativePath": "main.jpeg"
+                      },
+                      {
+                      "relativePath": "recipe-1.jpeg"
+                      },
+                      {
+                      "relativePath": "big copy.jpg"
+                      },
+                      {
+                      "relativePath": "big.jpg"
+                      }
+                  ]
+              }
+          },
 
 # Things I Added
 
