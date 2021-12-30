@@ -152,7 +152,7 @@
 
           "data": {
               "allFile": {
-                  "totalCount": 16,
+                  "totalCount": 12,
                   "nodes": [
                       {
                       "relativePath": "404.js"
