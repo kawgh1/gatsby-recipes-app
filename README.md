@@ -88,19 +88,19 @@
     - activeClassName="active-link"
 
 - ### Responsive Image Optimizations
-- ### gatsby-image-plugin
-- #### can't use StaticImage with dynamic data (data being iterated over from a query)
-- #### to display images from dynamic (iterated) data, must use GatsbyImage and gatsby-image-plugin
-  - https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
-  - https://www.udemy.com/course/gatsby-tutorial-and-projects-course/learn/lecture/25538934#notes
-  - Gatsby builds true-to-size image placeholders and generates a flat image placeholder until each image loads - this way the screen is not jumping around while images load
-  - Gatsby also generates multiple sizes of every image and provides them to the browser to pick the best one for that browser on that screen size
-  - Gatsby also generates the image attributes for SEO <picture> <srcset> <source>
-  - All of this is automatic with the **Gatsby Image Plugin**
-  - https://www.gatsbyjs.com/plugins/gatsby-plugin-image/
-  - **npm install gatsby-plugin-image gatsby-plugin-sharp gatsby-source-filesystem gatsby-transformer-sharp**
-  - **Configuration Docs**
-  - https://www.gatsbyjs.com/docs/how-to/images-and-media/using-gatsby-plugin-image/
+  - ### gatsby-image-plugin
+    - #### can't use StaticImage with dynamic data (data being iterated over from a query)
+    - #### to display images from dynamic (iterated) data, must use GatsbyImage and gatsby-image-plugin
+    - https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
+    - https://www.udemy.com/course/gatsby-tutorial-and-projects-course/learn/lecture/25538934#notes
+      - Gatsby builds true-to-size image placeholders and generates a flat image placeholder until each image loads - this way the screen is not jumping around while images load
+      - Gatsby also generates multiple sizes of every image and provides them to the browser to pick the best one for that browser on that screen size
+      - Gatsby also generates the image attributes for SEO <picture> <srcset> <source>
+    - All of this is automatic with the **Gatsby Image Plugin**
+    - https://www.gatsbyjs.com/plugins/gatsby-plugin-image/
+    - **npm install gatsby-plugin-image gatsby-plugin-sharp gatsby-source-filesystem gatsby-transformer-sharp**
+    - **Configuration Docs**
+      - https://www.gatsbyjs.com/docs/how-to/images-and-media/using-gatsby-plugin-image/
 
 # Gatsby & GraphQL
 
