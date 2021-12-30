@@ -54,6 +54,51 @@
     - in `src/components/Layout.js`
       - just `import 'normalize.css'`
 
+# HTML & CSS setup / design for this project
+
+- https://www.youtube.com/watch?v=m3LbCAL9JUI
+
+# Cool Tricks
+
+- ### Footer
+  - Instead of hard coding the year make it a Javascipt date object
+    - &copy; {new Date().getFullYear()}
+    - This will always display the current year so dont have old copyright dates
+- ### Lorem Ipsum
+
+  - Easy Lorem Ipsum tool allows to specify number of paragraphs with english words
+  - https://hipsum.co/
+
+- ### Icons
+
+  - React Icons
+  - https://react-icons.github.io/react-icons/
+  - **npm install react-icons --save**
+
+- ### Free Images
+- pexels.com
+
+# Gatsby Goodies
+
+- Here is a list of Gatsby goodies that Gatsby does behind the scenes
+
+- ### activeClassName
+
+  - allows easy styling of Navbar link when page is currently on that link
+    - activeClassName="active-link"
+
+- ### Responsive Image Optimizations
+  - https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
+  - https://www.udemy.com/course/gatsby-tutorial-and-projects-course/learn/lecture/25538934#notes
+  - Gatsby builds true-to-size image placeholders and generates a flat image placeholder until each image loads - this way the screen is not jumping around while images load
+  - Gatsby also generates multiple sizes of every image and provides them to the browser to pick the best one for that browser on that screen size
+  - Gatsby also generates the image attributes for SEO <picture> <srcset> <source>
+  - All of this is automatic with the **Gatsby Image Plugin**
+  - https://www.gatsbyjs.com/plugins/gatsby-plugin-image/
+  - **npm install gatsby-plugin-image gatsby-plugin-sharp gatsby-source-filesystem gatsby-transformer-sharp**
+  - **Configuration Docs**
+  - https://www.gatsbyjs.com/docs/how-to/images-and-media/using-gatsby-plugin-image/
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.com">

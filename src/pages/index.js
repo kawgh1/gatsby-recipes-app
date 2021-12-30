@@ -6,6 +6,8 @@ import Layout from "../components/Layout"
 // import { page, text } from "../examples/home.module.css"
 // Styled components example, not used
 // import { ExampleButton } from "../examples/button"
+// Image Optimization Example
+import Images from "../examples/Images"
 
 export default function Home() {
   return (
@@ -18,6 +20,8 @@ export default function Home() {
       </div>
 
       <a href="/about">regular anchor link</a>
+
+      <Images />
     </Layout>
   )
 }
