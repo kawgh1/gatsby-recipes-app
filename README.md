@@ -172,48 +172,49 @@
 
     - This returns all the files specified in gatsby-config.js and their relative path
 
-      {
-      "data": {
-      "allFile": {
-      "totalCount": 16,
-      "nodes": [
-      {
-      "relativePath": "404.js",
-      "name": "404",
-      "size": 389
-      },
-      {
-      "relativePath": "about.js",
-      "name": "about",
-      "size": 1245
-      },
-      {
-      "relativePath": "contact.js",
-      "name": "contact",
-      "size": 1778
-      },
-      {
-      "relativePath": "recipes.js",
-      "name": "recipes",
-      "size": 207
-      },
-      ...
-      ...
-      {
-      "relativePath": "recipes/recipe-4.jpeg",
-      "name": "recipe-4",
-      "size": 67947
-      },
-      {
-      "relativePath": "recipes/recipe-2.jpg",
-      "name": "recipe-2",
-      "size": 370246
-      },
-      {
-      "relativePath": "big copy.jpg",
-      "name": "big copy",
-      "size": 2528235
-      },
+                {
+                    "data": {
+                        "allFile": {
+                            "totalCount": 16,
+                            "nodes": [
+                                {
+                                    "relativePath": "404.js",
+                                    "name": "404",
+                                    "size": 389
+                                },
+                                {
+                                    "relativePath": "about.js",
+                                    "name": "about",
+                                    "size": 1245
+                                },
+                                {
+                                    "relativePath": "contact.js",
+                                    "name": "contact",
+                                    "size": 1778
+                                },
+                                {
+                                    "relativePath": "recipes.js",
+                                    "name": "recipes",
+                                    "size": 207
+                                },
+                                ...
+                                ...
+                                ...
+                                {
+                                    "relativePath": "recipes/recipe-4.jpeg",
+                                    "name": "recipe-4",
+                                    "size": 67947
+                                },
+                                {
+                                    "relativePath": "recipes/recipe-2.jpg",
+                                    "name": "recipe-2",
+                                    "size": 370246
+                                },
+                                {
+                                    "relativePath": "big copy.jpg",
+                                    "name": "big copy",
+                                    "size": 2528235
+                                },
 
 # Things I Added
 
