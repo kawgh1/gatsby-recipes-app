@@ -137,6 +137,28 @@
   - https://www.gatsbyjs.com/plugins/gatsby-source-filesystem
   - ## The point of this plugin is it allows you to access files you specify within your GraphQL queries
 
+    File: gatsby-config.js
+
+            {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+              name: `pages`,
+              path: `${__dirname}/src/pages/`,
+            },
+          },
+
+          // HERE we are setting a path to our images on the server
+          // This allows us to pull our images using GraphQL queries
+          {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+              name: `images`,
+              path: `${__dirname}/src/assets/images`,
+            },
+          },
+
+    File: index.js - generic GraphQL query
+
           query MyQuery {
             allFile {
               totalCount
