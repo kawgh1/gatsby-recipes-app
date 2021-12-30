@@ -11,6 +11,8 @@ import Layout from "../components/Layout"
 import { StaticImage } from "gatsby-plugin-image"
 // GraphQL example
 import FetchData2 from "../examples/fetchData2"
+// Gallery Example
+import Gallery from "../examples/gallery"
 
 export default function Home() {
   return (
@@ -31,7 +33,8 @@ export default function Home() {
             </div>
           </div>
         </header>
-        <FetchData2></FetchData2>
+        <Gallery />
+        {/* <FetchData2 /> */}
         {/* <AllRecipes /> */}
       </main>
 

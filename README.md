@@ -88,6 +88,9 @@
     - activeClassName="active-link"
 
 - ### Responsive Image Optimizations
+- ### gatsby-image-plugin
+- #### can't use StaticImage with dynamic data (data being iterated over from a query)
+- #### to display images from dynamic (iterated) data, must use GatsbyImage and gatsby-image-plugin
   - https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
   - https://www.udemy.com/course/gatsby-tutorial-and-projects-course/learn/lecture/25538934#notes
   - Gatsby builds true-to-size image placeholders and generates a flat image placeholder until each image loads - this way the screen is not jumping around while images load
