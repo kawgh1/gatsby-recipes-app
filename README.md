@@ -101,7 +101,7 @@
 
 # Gatsby & GraphQL
 
-- ## Gatsby - GraphQL Data Flow \/
+- ## Gatsby - GraphQL Data Flow \\\/
   - **DATA** - (APIs, Headless CMS, JSON, Markdown, SiteMetaData)
   - **GRAPHQL**
   - **GraphiQL Browser Dashboard** - for testing queries
