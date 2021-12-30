@@ -160,61 +160,60 @@
     File: index.js - generic GraphQL query
 
           query MyQuery {
-            allFile {
-              totalCount
-              nodes {
-                relativePath
-              }
+              allFile {
+                  totalCount
+                  nodes {
+                      relativePath
+                      name
+                      size
+                  }
+                }
             }
-          }
 
     - This returns all the files specified in gatsby-config.js and their relative path
 
       {
-
-          "data": {
-              "allFile": {
-                  "totalCount": 12,
-                  "nodes": [
-                      {
-                      "relativePath": "404.js"
-                      },
-                      {
-                      "relativePath": "about.js"
-                      },
-                      {
-                      "relativePath": "contact.js"
-                      },
-                      {
-                      "relativePath": "recipes.js"
-                      },
-                      {
-                      "relativePath": "index.js"
-                      },
-                      {
-                      "relativePath": "tags.js"
-                      },
-                      {
-                      "relativePath": "logo.svg"
-                      },
-                      {
-                      "relativePath": "about.jpeg"
-                      },
-                      {
-                      "relativePath": "main.jpeg"
-                      },
-                      {
-                      "relativePath": "recipe-1.jpeg"
-                      },
-                      {
-                      "relativePath": "big copy.jpg"
-                      },
-                      {
-                      "relativePath": "big.jpg"
-                      }
-                  ]
-              }
-          },
+      "data": {
+      "allFile": {
+      "totalCount": 16,
+      "nodes": [
+      {
+      "relativePath": "404.js",
+      "name": "404",
+      "size": 389
+      },
+      {
+      "relativePath": "about.js",
+      "name": "about",
+      "size": 1245
+      },
+      {
+      "relativePath": "contact.js",
+      "name": "contact",
+      "size": 1778
+      },
+      {
+      "relativePath": "recipes.js",
+      "name": "recipes",
+      "size": 207
+      },
+      ...
+      ...
+      {
+      "relativePath": "recipes/recipe-4.jpeg",
+      "name": "recipe-4",
+      "size": 67947
+      },
+      {
+      "relativePath": "recipes/recipe-2.jpg",
+      "name": "recipe-2",
+      "size": 370246
+      },
+      {
+      "relativePath": "big copy.jpg",
+      "name": "big copy",
+      "size": 2528235
+      },
 
 # Things I Added
 
