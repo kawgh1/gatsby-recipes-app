@@ -102,11 +102,24 @@
 # Gatsby & GraphQL
 
 - ## Gatsby - GraphQL Data Flow \\\/
+
   - **DATA** - (APIs, Headless CMS, JSON, Markdown, SiteMetaData)
   - **GRAPHQL**
   - **GraphiQL Browser Dashboard** - for testing queries
-  - **`<StaticQuery>` and `<PageQuery>`**
+  - **`<StaticQuery>` and `<PageQuery>`** - Page queries can only be used on Page components and can accept variables
   - **REACT COMPONENTS** - Page, Title, Heading
+
+- ## SiteMetaData
+
+  - add Site meta data in gatsby-config.js to pull from anywhere in the app - useful for SEO
+
+    siteMetadata: {
+    title: 'Simply Recipes',
+    description: 'Nice and clean recipes site',
+    author: 'John Doe'
+    }
+
+  - https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/
 
 # Things I Added
 
