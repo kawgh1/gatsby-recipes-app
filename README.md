@@ -114,9 +114,9 @@
   - add Site meta data in gatsby-config.js to pull from anywhere in the app - useful for SEO
 
     siteMetadata: {
-    title: 'Simply Recipes',
-    description: 'Nice and clean recipes site',
-    author: 'John Doe'
+    &nbsp;&nbsp;&nbsp; title: 'Simply Recipes',
+    &nbsp;&nbsp;&nbsp; description: 'Nice and clean recipes site',
+    &nbsp;&nbsp;&nbsp; author: 'John Doe'
     }
 
   - https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/
