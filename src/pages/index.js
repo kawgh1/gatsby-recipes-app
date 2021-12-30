@@ -7,21 +7,33 @@ import Layout from "../components/Layout"
 // Styled components example, not used
 // import { ExampleButton } from "../examples/button"
 // Image Optimization Example
-import Images from "../examples/Images"
+// import Images from "../examples/Images"
+import { StaticImage } from "gatsby-plugin-image"
 
 export default function Home() {
   return (
     <Layout>
-      <h1>Home page!</h1>
-      {/* Link components are only for internal page routing, 
-      not for links to outside sites */}
-      <div>
-        <Link to="about"> about</Link>
-      </div>
+      <main className="page">
+        <header className="hero">
+          <StaticImage
+            src="../assets/images/main.jpeg"
+            alt="eggs"
+            className="hero-img"
+            placeholder="tracedSVG"
+            layout="fullWidth"
+          ></StaticImage>
+          <div className="hero-container">
+            <div className="hero-text">
+              <h1>simply recipes</h1>
+              <h4>no fluff, just recipes</h4>
+            </div>
+          </div>
+        </header>
+        {/* <AllRecipes /> */}
+      </main>
 
-      <a href="/about">regular anchor link</a>
-
-      <Images />
+      {/* Just an example */}
+      {/* <Images /> */}
     </Layout>
   )
 }

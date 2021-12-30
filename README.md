@@ -99,6 +99,20 @@
   - **Configuration Docs**
   - https://www.gatsbyjs.com/docs/how-to/images-and-media/using-gatsby-plugin-image/
 
+# Gatsby & GraphQL
+
+- ## Gatsby - GraphQL Data Flow \/
+  - **DATA** - (APIs, Headless CMS, JSON, Markdown, SiteMetaData)
+  - **GRAPHQL**
+  - **GraphiQL Browser Dashboard** - for testing queries
+  - **`<StaticQuery>` and `<PageQuery>`**
+  - **REACT COMPONENTS** - Page, Title, Heading
+
+# Things I Added
+
+- Custom text shadow on hero image
+  - text-shadow: 0 5px 9px #c4b59d, 0 0px 1px #fff;
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.com">
