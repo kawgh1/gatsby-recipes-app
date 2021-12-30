@@ -1,13 +1,11 @@
 import React from "react"
-
 import Layout from "../components/Layout"
-
-function Error() {
+function Recipes() {
   return (
     <Layout>
-      <h2>welcome to Error page</h2>
+      <h2>welcome to Recipes page</h2>
     </Layout>
   )
 }
 
-export default Error
+export default Recipes

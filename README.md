@@ -26,6 +26,32 @@
 - **gatsby clean** - Very useful when working with images and other resources, sometimes too many code changes on the same asset can cause glitches with Gatsby optimizations - this command clears the .cache, public folders and regenerates them fresh
   - If you get an bizarre error and not sure what it is, run **gatsby clean** first
 
+# Gatsby Plugins
+
+- https://www.gatsbyjs.com/plugins
+- **Styled Components**
+
+  - https://www.gatsbyjs.com/plugins/gatsby-plugin-styled-components/?=styled
+  - Install
+
+    npm install gatsby-plugin-styled-components styled-components babel-plugin-styled-components
+
+# Normalize.css
+
+- This is a React thing, not a Gatsby plugin
+
+- What does it do?
+
+  - Preserves useful defaults, unlike many CSS resets.
+  - Normalizes styles for a wide range of elements.
+  - Corrects bugs and common browser inconsistencies.
+  - Improves usability with subtle modifications.
+  - Explains what code does using detailed comments.
+  - **npm install normalize.css**
+  - https://www.npmjs.com/package/normalize.css
+  - in `components/Layout.js`
+    - just `import 'normalize.css'`
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.com">

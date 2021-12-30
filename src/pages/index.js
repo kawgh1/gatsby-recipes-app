@@ -4,6 +4,8 @@ import { Link } from "gatsby"
 import Layout from "../components/Layout"
 // CSS module example, not used
 // import { page, text } from "../examples/home.module.css"
+// Styled components example, not used
+// import { ExampleButton } from "../examples/button"
 
 export default function Home() {
   return (
@@ -14,9 +16,7 @@ export default function Home() {
       <div>
         <Link to="about"> about</Link>
       </div>
-      <div>
-        <Link to="company/history"> history</Link>
-      </div>
+
       <a href="/about">regular anchor link</a>
     </Layout>
   )
