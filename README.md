@@ -106,7 +106,10 @@
   - **DATA** - (APIs, Headless CMS, JSON, Markdown, SiteMetaData)
   - **GRAPHQL**
   - **GraphiQL Browser Dashboard** - for testing queries
-  - **`<StaticQuery>` and `<PageQuery>`** - Page queries can only be used on Page components and can accept variables
+  - **`<StaticQuery>` and `<PageQuery>`**
+    - Static Queries are for regular components
+    - Gatsby also allows the `useStaticQuery` Hook
+    - Page queries can only be used on Page components and can accept variables
   - **REACT COMPONENTS** - Page, Title, Heading
 
 - ## SiteMetaData
@@ -122,6 +125,73 @@
         }
 
   - https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/
+
+# Gatsby Plugins
+
+- ### gatsby-source-filesystem
+
+  - A Gatsby source plugin for sourcing data into your Gatsby application from your local filesystem.
+
+  - The plugin creates File nodes from files. The various “transformer” plugins can transform File nodes into various other types of data e.g. gatsby-transformer-json transforms JSON files into JSON data nodes and gatsby-transformer-remark transforms markdown files into MarkdownRemark nodes from which you can query an HTML representation of the markdown.
+  - **npm install gatsby-source-filesystem**
+  - https://www.gatsbyjs.com/plugins/gatsby-source-filesystem
+  - ## The point of this plugin is it allows you to access files you specify within your GraphQL queries
+
+    - query MyQuery {
+      allFile {
+      totalCount
+      nodes {
+      relativePath
+      }
+      }
+      }
+
+          - This returns all the files specified in gatsby-config.js and their relative path
+          - {
+
+      "data": {
+      "allFile": {
+      "totalCount": 16,
+      "nodes": [
+      {
+      "relativePath": "404.js"
+      },
+      {
+      "relativePath": "about.js"
+      },
+      {
+      "relativePath": "contact.js"
+      },
+      {
+      "relativePath": "recipes.js"
+      },
+      {
+      "relativePath": "index.js"
+      },
+      {
+      "relativePath": "tags.js"
+      },
+      {
+      "relativePath": "logo.svg"
+      },
+      {
+      "relativePath": "about.jpeg"
+      },
+      {
+      "relativePath": "main.jpeg"
+      },
+      {
+      "relativePath": "recipe-1.jpeg"
+      },
+      {
+      "relativePath": "big copy.jpg"
+      },
+      {
+      "relativePath": "big.jpg"
+      }
+      ]
+      }
+      },
 
 # Things I Added
 

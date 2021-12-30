@@ -23,5 +23,31 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    // You can have multiple instances of this gatsby-source-filesystem plugin
+    // to read source nodes from different locations on your
+    // filesystem.
+    //
+    // THIS IS USED FOR GRAPHQL QUERIES
+    //
+    // The following sets up the Jekyll pattern of having a
+    // "pages" directory for Markdown files and a "data" directory
+    // for `.json`, `.yaml`, `.csv`.
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/pages/`,
+      },
+    },
+
+    // HERE we are setting a path to our images on the server
+    // This allows us to pull our images using GraphQL queries
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/assets/images`,
+      },
+    },
   ],
 }
