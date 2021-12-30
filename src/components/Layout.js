@@ -3,6 +3,7 @@ import Navbar from "./Navbar"
 import Footer from "./Footer"
 // main css
 import "../assets/css/main.css"
+import "normalize.css"
 
 function Layout({ children }) {
   return (

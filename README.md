@@ -38,19 +38,21 @@
 
 # Normalize.css
 
-- This is a React thing, not a Gatsby plugin
+- #### This is a React thing, not a Gatsby plugin
 
-- What does it do?
+- #### What does it do?
 
-  - Preserves useful defaults, unlike many CSS resets.
-  - Normalizes styles for a wide range of elements.
-  - Corrects bugs and common browser inconsistencies.
-  - Improves usability with subtle modifications.
-  - Explains what code does using detailed comments.
-  - **npm install normalize.css**
-  - https://www.npmjs.com/package/normalize.css
-  - in `components/Layout.js`
-    - just `import 'normalize.css'`
+  - #### Similar to doing the "border-box" and "margin:0" on the global styles, but corrects for a lot more and adjusts for browser compatibility etc.
+
+    - Preserves useful defaults, unlike many CSS resets.
+    - Normalizes styles for a wide range of elements.
+    - Corrects bugs and common browser inconsistencies.
+    - Improves usability with subtle modifications.
+    - Explains what code does using detailed comments.
+    - **npm install normalize.css**
+    - https://www.npmjs.com/package/normalize.css
+    - in `src/components/Layout.js`
+      - just `import 'normalize.css'`
 
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
