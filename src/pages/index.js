@@ -13,6 +13,8 @@ import { StaticImage } from "gatsby-plugin-image"
 import FetchData2 from "../examples/fetchData2"
 // Gallery Example
 import Gallery from "../examples/gallery"
+// All Recipes Component
+import AllRecipes from "../components/AllRecipes"
 
 export default function Home() {
   return (
@@ -33,9 +35,10 @@ export default function Home() {
             </div>
           </div>
         </header>
-        <Gallery />
+        {/* Gallery Example */}
+        {/* <Gallery /> */}
         {/* <FetchData2 /> */}
-        {/* <AllRecipes /> */}
+        <AllRecipes />
       </main>
 
       {/* Just an example */}

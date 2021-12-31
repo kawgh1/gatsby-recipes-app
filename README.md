@@ -224,6 +224,7 @@
   - Allows us to connect our Gatsby app to the Contentful Headless CMS setup on https://contentful.com
   - https://www.gatsbyjs.com/plugins/gatsby-source-contentful/?=contentful
   - **npm install gatsby-source-contentful**
+  - #### One of the key reasons we chose Contenful Plugin for this project is their plugin allows access to the gatsbyImageData property in GraphQL. Some CMS plugins do not and thus make it very difficult to work with Gatsby images, such that it may be necessary to build your own plugin.
   - Using Delivery API
 
           // In your gatsby-config.js
@@ -252,6 +253,11 @@
 
 - Custom text shadow on hero image
   - text-shadow: 0 5px 9px #c4b59d, 0 0px 1px #fff;
+- Image box shadow and border
+  - box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  - border: 1px solid #ccc;
+- font styling
 
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
