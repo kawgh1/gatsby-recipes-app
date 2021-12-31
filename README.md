@@ -220,8 +220,25 @@
                                 },
 
 - ### gatsby-source-contentful
+
   - Allows us to connect our Gatsby app to the Contentful Headless CMS setup on https://contentful.com
+  - https://www.gatsbyjs.com/plugins/gatsby-source-contentful/?=contentful
   - **npm install gatsby-source-contentful**
+  - Using Delivery API
+
+          // In your gatsby-config.js
+          module.exports = {
+            plugins: [
+              {
+                resolve: `gatsby-source-contentful`,
+                options: {
+                  spaceId: `your_space_id`,
+                  // Learn about environment variables: https://gatsby.dev/env-vars
+                  accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+                },
+              },
+            ],
+          }
 
 # HEADLESS CMS
 
