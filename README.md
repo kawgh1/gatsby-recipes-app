@@ -219,6 +219,18 @@
                                     "size": 2528235
                                 },
 
+- ### gatsby-source-contentful
+  - Allows us to connect our Gatsby app to the Contentful Headless CMS setup on https://contentful.com
+  - **npm install gatsby-source-contentful**
+
+# HEADLESS CMS
+
+- Different Options
+  - https://jamstack.org/headless-cms/
+- ### Headless CMS for this Project
+  - https://contentful.com
+  - **npm install contentful**
+
 # Things I Added
 
 - Custom text shadow on hero image
