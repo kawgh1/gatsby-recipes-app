@@ -289,8 +289,9 @@
 - https://www.npmjs.com/package/slugify
 
 - ## There are TWO ways to set up auto-generated pages with Gatsby
-- ### File System Route API - generally easier
-- ### Gastby-Node.js - more complex, but more flexible
+
+  - ## File System Route API - generally easier
+  - ## Gastby-Node.js - more complex, but more flexible
 
 - ### File System Route API
 - https://www.gatsbyjs.com/docs/reference/routing/file-system-route-api/
