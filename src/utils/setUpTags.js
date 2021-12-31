@@ -2,7 +2,7 @@ const setupTags = recipes => {
   const allTags = {}
 
   recipes.forEach(recipe => {
-    recipe.content.tags.forEach(tag => {
+    recipe.contentArray.tags.forEach(tag => {
       if (allTags[tag]) {
         allTags[tag] = allTags[tag] + 1
       } else {
@@ -16,6 +16,7 @@ const setupTags = recipes => {
     return firstTag.localeCompare(secondTag)
   })
 
+  // console.log(newTags)
   return newTags
 }
 

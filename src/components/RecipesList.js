@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import slugify from "slugify"
 
 // props = {recipes = []}
 // means take recipes, if recipes not available, then use empty array[]
@@ -13,8 +14,12 @@ function RecipesList({ recipes = [] }) {
           /* const { id, title, image, prepTime, cookTime } = recipe */
         }
         const pathToImage = getImage(recipe.image)
+        // slugify - this takes the title, lowercases it and adds hyphens '-' between words
+        // we can then use this in are auto-generated recipe URLs
+        // Ex) "Banana Pancakes" => "banana-pancakes" => localhost:8000/recipes/banana-pancakes
+        const slug = slugify(recipe.title, { lower: true })
         return (
-          <Link to={`/${recipe.title}`} className="recipe" key={recipe.id}>
+          <Link to={`/${slug}`} className="recipe" key={recipe.id}>
             <p
               style={{
                 fontSize: "1.2rem",

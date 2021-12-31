@@ -276,10 +276,34 @@
             return firstTag.localeCompare(secondTag)
           })
 
+
           return newTags
         }
 
-export default setupTags
+        export default setupTags
+
+# Creating Pages Programmatically
+
+- ### Slugify
+- **npm install slugify**
+- https://www.npmjs.com/package/slugify
+
+- ### File System Route API
+- https://www.gatsbyjs.com/docs/reference/routing/file-system-route-api/
+- Allows us to generate Template pages from our `src` folder using GraphQL queries
+- Field syntax
+  Dot notation
+
+        Using . you signify that you want to access a field on a node of a type.
+
+        src/pages/products/{Product.name}.js generates the following query:
+
+        allProduct {
+          nodes {
+            id # Gatsby always queries for id
+            name
+          }
+        }
 
 # Things I Added
 
