@@ -288,6 +288,10 @@
 - **npm install slugify**
 - https://www.npmjs.com/package/slugify
 
+- ## There are TWO ways to set up auto-generated pages with Gatsby
+- ### File System Route API - generally easier
+- ### Gastby-Node.js - more complex, but more flexible
+
 - ### File System Route API
 - https://www.gatsbyjs.com/docs/reference/routing/file-system-route-api/
 - Allows us to generate Template pages from our `src` folder using GraphQL queries
@@ -305,6 +309,51 @@
           }
         }
 
+- ### Gatsby-Node.js API
+- https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/
+- Intro
+
+      - Gatsby gives plugins and site builders many APIs for building your site. Code in the file gatsby-node.js is run once in the process of building your site. You can use its APIs to create pages dynamically, add data into GraphQL, or respond to events during the build lifecycle. To use the Gatsby Node APIs, create a file named gatsby-node.js in the root of your site. Export any of the APIs you wish to use in this file.
+
+      - Every Gatsby Node API gets passed a set of helper functions. These let you access several methods like reporting, or perform actions like creating new pages.
+
+      - An example gatsby-node.js file that implements two APIs, onPostBuild, and createPages.
+
+
+        gatsby-node.js
+
+              const path = require(`path`)
+              // Log out information after a build is done
+              exports.onPostBuild = ({ reporter }) => {
+                reporter.info(`Your Gatsby site has been built!`)
+              }
+              // Create blog pages dynamically
+              exports.createPages = async ({ graphql, actions }) => {
+                const { createPage } = actions
+                const blogPostTemplate = path.resolve(`src/templates/blog-post.js`)
+                const result = await graphql(`
+                  query {
+                    allSamplePages {
+                      edges {
+                        node {
+                          slug
+                          title
+                        }
+                      }
+                    }
+                  }
+                `)
+                result.data.allSamplePages.edges.forEach(edge => {
+                  createPage({
+                    path: `${edge.node.slug}`,
+                    component: blogPostTemplate,
+                    context: {
+                      title: edge.node.title,
+                    },
+                  })
+                })
+              }
+
 # Things I Added
 
 - Custom text shadow on hero image
@@ -313,7 +362,7 @@
   - box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   - border: 1px solid #ccc;
-- font styling
+- general styling
 
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">

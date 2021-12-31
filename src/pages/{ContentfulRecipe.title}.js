@@ -6,7 +6,7 @@ import Layout from "../components/Layout"
 import slugify from "slugify"
 // import SEO from "../components/SEO"
 
-// This is a Template page to help Gatsby generate pages
+// This is a Template page to help Gatsby generate pages from graphql query
 
 const RecipeTemplate = ({ data }) => {
   const {
