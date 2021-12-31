@@ -1,6 +1,7 @@
 import React from "react"
 
-function TagsList() {
+function TagsList({ recipes }) {
+  console.log(recipes)
   return (
     <div>
       {" "}

@@ -246,8 +246,40 @@
 - Different Options
   - https://jamstack.org/headless-cms/
 - ### Headless CMS for this Project
+
   - https://contentful.com
   - **npm install contentful**
+
+- # NOTE ON TAGS
+
+  - The Tags are not their own property
+  - The tags are an array found in each recipe object
+  - Since recipes is an array itself, accessing the tags means accessing an array within an object within an array
+  - This functionality was implemented in the `utils/setUpTags.js` file
+
+          const setupTags = recipes => {
+          const allTags = {}
+
+          recipes.forEach(recipe => {
+            recipe.content.tags.forEach(tag => {
+              if (allTags[tag]) {
+                allTags[tag] = allTags[tag] + 1
+              } else {
+                allTags[tag] = 1
+              }
+            })
+          })
+
+          const newTags = Object.entries(allTags).sort((a, b) => {
+            const [firstTag] = a
+            const [secondTag] = b
+            return firstTag.localeCompare(secondTag)
+          })
+
+          return newTags
+        }
+
+export default setupTags
 
 # Things I Added
 
