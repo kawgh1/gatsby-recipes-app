@@ -256,6 +256,7 @@ button.block {
   width: 90vw;
   max-width: var(--max-width);
   margin: 0 auto;
+  margin-top: 20px;
 }
 .page {
   min-height: calc(100vh - (6rem + 4rem));
@@ -499,23 +500,37 @@ form > *:last-child {
 .about-img {
   border-radius: var(--borderRadius);
   height: 500px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border: 1px solid #ccc;
+}
+
+.featured-recipes > h5 {
+  text-align: center;
+  max-width: 100%;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  font-size: 32px;
 }
 
 @media screen and (min-width: 992px) {
   .about-page {
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    height: 400px;
+    height: 500px;
   }
   .about-img {
     height: 100%;
   }
+  .featured-recipes > h5 {
+    text-align: center;
+    max-width: 100%;
+    margin-bottom: 70px;
+    margin-top: 50px;
+    font-size: 44px;
+  }
 }
 
-.featured-recipes > h5 {
-  text-align: center;
-  max-width: 100%;
-}
 /*#########*/
 /* Hero */
 /*#########*/
@@ -614,7 +629,8 @@ form > *:last-child {
   margin-bottom: 0;
   line-height: 1;
   color: var(--grey-800);
-  margin-top: 0.5rem;
+  margin-top: 0.8rem;
+  margin-left: 0.1rem;
 }
 @media screen and (min-width: 576px) {
   .recipes-list {
@@ -707,6 +723,9 @@ form > *:last-child {
 }
 .recipe-hero .about-img {
   height: 400px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border: 1px solid #ccc;
 }
 .recipe-icons {
   display: grid;
