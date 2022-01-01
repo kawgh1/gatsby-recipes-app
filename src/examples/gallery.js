@@ -30,11 +30,8 @@ function Gallery() {
 
   return (
     <Wrapper>
-      {/* <h2>simple image Gallery</h2> */}
       {nodes.map((image, index) => {
-        {
-          /* console.log(image) */
-        }
+        // console.log(image)
 
         const { name } = image
         // Gatsby getImage() function is a null-safe method for returning multiple objects

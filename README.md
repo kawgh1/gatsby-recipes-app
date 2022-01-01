@@ -291,7 +291,11 @@
 - ## There are TWO ways to set up auto-generated pages with Gatsby
 
   - ## File System Route API - generally easier
+    - This project uses File System Route API to generate the Recipe URLS
+    - ex.) http://localhost:8000/banana-pancakes
   - ## Gastby-Node.js - more complex, but more flexible
+    - This project uses gatsby-node.js config to generate Tag URLs
+    - ex.) http://localhost:8000/tags/breakfast
 
 - ### File System Route API
 - https://www.gatsbyjs.com/docs/reference/routing/file-system-route-api/

@@ -10,6 +10,7 @@ function Tags({ data }) {
   return (
     <Layout>
       <main className="page">
+        <h2>welcome to Tags page</h2>
         <section className="tags-page">
           {newTags.map((tag, index) => {
             const [text, value] = tag

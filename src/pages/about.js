@@ -3,7 +3,7 @@ import Layout from "../components/Layout"
 import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 // gatsby graphql
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql } from "gatsby"
 // recipes list
 import RecipesList from "../components/RecipesList"
 
@@ -18,6 +18,7 @@ function About({
   return (
     <Layout>
       <main className="page">
+        <h2>welcome to About page</h2>
         <section className="about-page">
           <article>
             <h2>I'm green coloring book poke taxidermy</h2>

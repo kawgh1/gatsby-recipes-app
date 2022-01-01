@@ -10,9 +10,8 @@ function RecipesList({ recipes = [] }) {
   return (
     <div className="recipes-list">
       {recipes.map(recipe => {
-        {
-          /* const { id, title, image, prepTime, cookTime } = recipe */
-        }
+        //  const { id, title, image, prepTime, cookTime } = recipe
+
         const pathToImage = getImage(recipe.image)
         // slugify - this takes the title, lowercases it and adds hyphens '-' between words
         // we can then use this in are auto-generated recipe URLs

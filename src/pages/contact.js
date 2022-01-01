@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/Layout"
 // gatsby graphql
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql } from "gatsby"
 // recipes list
 import RecipesList from "../components/RecipesList"
 
@@ -13,6 +13,7 @@ function contact({
   return (
     <Layout>
       <main className="page">
+        <h2>welcome to Contact page</h2>
         <section className="contact-page">
           <article className="contact-info">
             <h3>Want To Get In Touch?</h3>

@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400|Inconsolata:400");
+/* We are using a Gatsby plugin to PRE-LOAD our fonts, 
+   rather than apply styles after the page has loaded */
+/* @import url("https://fonts.googleapis.com/css?family=Montserrat:400|Inconsolata:400"); */
+
 *,
 ::after,
 ::before {
@@ -358,7 +361,7 @@ form > *:last-child {
   margin-bottom: -9px;
 }
 .nav-btn {
-  padding: 0.15rem 0.75rem;
+  padding: 0.25rem 0.75rem 0.15rem;
 }
 .nav-btn svg {
   font-size: 1.5rem;

@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 // layout
 import Layout from "../components/Layout"
 // CSS module example, not used
@@ -10,9 +10,9 @@ import Layout from "../components/Layout"
 // import Images from "../examples/Images"
 import { StaticImage } from "gatsby-plugin-image"
 // GraphQL example
-import FetchData2 from "../examples/fetchData2"
+// import FetchData2 from "../examples/fetchData2"
 // Gallery Example
-import Gallery from "../examples/gallery"
+// import Gallery from "../examples/gallery"
 // All Recipes Component
 import AllRecipes from "../components/AllRecipes"
 
