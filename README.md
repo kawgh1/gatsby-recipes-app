@@ -19,6 +19,9 @@
 ### General Notes
 
 - Based off course https://www.udemy.com/course/gatsby-tutorial-and-projects-course/
+- Repo - https://github.com/john-smilga/gatsby-v3-tutorial-recipes
+
+### Gatsby Setup
 
 - First make sure Gatsby-CLI is installed
   - **npm install -g gatsby-cli**
