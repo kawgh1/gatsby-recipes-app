@@ -1,5 +1,19 @@
 # Gastby Recipes App
 
+## Continuous Deployment Issue with Github
+
+- There is some kind of bug when doing Continuous Deployment with Github
+
+      7:58:14 PM: error Generating JavaScript bundles failed
+      7:58:14 PM: Can't resolve '../utils/setupTags.js' in '/opt/build/repo/src/components'
+      7:58:14 PM: If you're trying to use a package make sure that '../utils/setupTags.js' is installed. If you're trying to use a local file make sure that the path is correct.
+      7:58:14 PM: error Generating JavaScript bundles failed
+      7:58:14 PM: Can't resolve '../utils/setupTags.js' in '/opt/build/repo/src/pages'
+      7:58:14 PM: If you're trying to use a package make sure that '../utils/setupTags.js' is installed. If you're trying to use a local file make sure that the path is correct.
+
+- I did not care enough to troubleshoot and just deployed directly with drag-and-drop of the public folder after a `gatsby clean` and `gatsby build`
+- generates a public folder in the local computer environment, upload that directly to Netlify
+
 - Based off course https://www.udemy.com/course/gatsby-tutorial-and-projects-course/
 
 - First make sure Gatsby-CLI is installed
