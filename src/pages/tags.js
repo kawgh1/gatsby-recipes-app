@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/Layout"
 import { graphql, Link } from "gatsby"
-import setupTags from "../utils/setupTags.js"
+import setupTags from "../utils/setupTags"
 import slugify from "slugify"
 // SEO
 import Seo from "../components/Seo"
