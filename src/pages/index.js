@@ -15,10 +15,13 @@ import { StaticImage } from "gatsby-plugin-image"
 // import Gallery from "../examples/gallery"
 // All Recipes Component
 import AllRecipes from "../components/AllRecipes"
+// SEO
+import Seo from "../components/Seo"
 
 export default function Home() {
   return (
     <Layout>
+      <Seo title="Home" />
       <main className="page">
         <header className="hero">
           <StaticImage

@@ -241,6 +241,15 @@
             ],
           }
 
+- ### gatsby-plugin-webfonts
+  - **This plugin allows us to PRE-LOAD our font styles**
+    - Using Google fonts or other the traditional way, either by import or meta stylesheet link, applies the font **after** the page has loaded
+  - https://www.gatsbyjs.com/plugins/gatsby-plugin-webfonts/?=webfonts
+  - **npm install gastby-plugin-webfonts**
+  - ### NOTE
+    - Gatsby web font plugins get depreciated very often
+    - Good news is the setup for all of them is basically the same, so if depreciated just find a new one and it will work the same
+
 # HEADLESS CMS
 
 - Different Options
@@ -358,6 +367,30 @@
                   })
                 })
               }
+
+# CONTACT FORM
+
+- I opted not to make a functional Contact Form as this is just a demo site
+- https://formspree.io/
+- formspree.io is one easy to set up form submission site
+
+# CUSTOM FAVICON
+
+- Left Favicon alone, default Gatsby one
+- favicon.ico is located in the static folder
+- Favicon Generator
+  - favicon.io
+
+# SEO
+
+- gatsby-plugin-react-helmet
+- **npm install gatsby-plugin-react-helmet react-helmet**
+- https://www.gatsbyjs.com/plugins/gatsby-plugin-react-helmet/?=gatsby-plugin-react
+- How to use
+
+  Just add the plugin to the plugins array in your gatsby-config.js
+
+  plugins: [`gatsby-plugin-react-helmet`]
 
 # Things I Added
 

@@ -4,7 +4,8 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { BsClockHistory, BsClock, BsPeople } from "react-icons/bs"
 import Layout from "../components/Layout"
 import slugify from "slugify"
-// import SEO from "../components/SEO"
+// SEO
+import Seo from "../components/Seo"
 
 // This is a Template page to help Gatsby generate pages from graphql query
 
@@ -22,7 +23,7 @@ const RecipeTemplate = ({ data }) => {
   const { tags, instructions, ingredients, tools } = contentArray
   return (
     <Layout>
-      {/* <SEO title={title} description={description} /> */}
+      <Seo title={title} description={description} />
       <main className="page">
         <div className="recipe-page">
           {/* hero */}

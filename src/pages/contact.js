@@ -4,6 +4,8 @@ import Layout from "../components/Layout"
 import { graphql } from "gatsby"
 // recipes list
 import RecipesList from "../components/RecipesList"
+// SEO
+import Seo from "../components/Seo"
 
 function contact({
   data: {
@@ -12,6 +14,7 @@ function contact({
 }) {
   return (
     <Layout>
+      <Seo title="Contact" />
       <main className="page">
         <h2>welcome to Contact page</h2>
         <section className="contact-page">

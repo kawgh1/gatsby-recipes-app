@@ -3,12 +3,15 @@ import Layout from "../components/Layout"
 import { graphql, Link } from "gatsby"
 import setupTags from "../utils/setupTags"
 import slugify from "slugify"
+// SEO
+import Seo from "../components/Seo"
 
 // data is passed as props from the graphQL query
 function Tags({ data }) {
   const newTags = setupTags(data.allContentfulRecipe.nodes)
   return (
     <Layout>
+      <Seo title="Tags" />
       <main className="page">
         <h2>welcome to Tags page</h2>
         <section className="tags-page">

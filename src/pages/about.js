@@ -6,6 +6,8 @@ import { Link } from "gatsby"
 import { graphql } from "gatsby"
 // recipes list
 import RecipesList from "../components/RecipesList"
+// SEO
+import Seo from "../components/Seo"
 
 // props = {recipes = []}
 // means take recipes, if recipes not available, then use empty array[]
@@ -17,6 +19,7 @@ function About({
   // console.log(data)
   return (
     <Layout>
+      <Seo title="About" />
       <main className="page">
         <h2>welcome to About page</h2>
         <section className="about-page">
