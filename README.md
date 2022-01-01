@@ -16,6 +16,8 @@
 - I did not care enough to troubleshoot and just deployed directly with drag-and-drop of the public folder after a `gatsby clean` and `gatsby build`
 - generates a public folder in the local computer environment, upload that directly to Netlify
 
+### General Notes
+
 - Based off course https://www.udemy.com/course/gatsby-tutorial-and-projects-course/
 
 - First make sure Gatsby-CLI is installed
