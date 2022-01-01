@@ -1,5 +1,7 @@
 # Gastby Recipes App
 
+#### Live site: https://gatsby-recipe-app.netlify.app/
+
 ## Continuous Deployment Issue with Github
 
 - There is some kind of bug when doing Continuous Deployment with Github
